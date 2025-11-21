@@ -1,1 +1,17 @@
-<div >Examen Práctico #2</div>
+ <div class="row">
+    <div class="col">
+        <app-lista-ingredientes
+            [ingredientes]="ingredientes"
+            (ingredienteSeleccionado)="agregarIngrediente($event)">
+        </app-lista-ingredientes>
+
+    </div>
+    <div class="col">
+        <app-receta
+            [receta]="receta"
+            (ingredienteEliminado)="eliminarIngrediente($event)">
+        </app-receta>
+    </div>
+ </div>
+
+
