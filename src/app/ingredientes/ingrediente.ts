@@ -3,7 +3,7 @@ export class Ingrediente{
     nombre: string;
     descripcion: string;
     calorias: number;
-    img: string;
+    imagen: string;
 
     constructor(id: number,
     nombre: string,
@@ -14,6 +14,6 @@ export class Ingrediente{
         this.nombre=nombre;
         this.descripcion=descripcion;
         this.calorias=calorias;
-        this.img=img;
+        this.imagen=img;
     }
 }

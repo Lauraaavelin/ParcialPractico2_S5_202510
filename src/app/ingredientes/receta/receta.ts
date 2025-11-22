@@ -12,7 +12,7 @@ export class Receta{
 
       agregarIngrediente(ing: Ingrediente) {
         
-        let ingredienteReceta: IngredienteReceta= new IngredienteReceta(1,ing.id, ing.nombre,  ing.descripcion, ing.calorias, ing.img);
+        let ingredienteReceta: IngredienteReceta= new IngredienteReceta(1,ing.id, ing.nombre,  ing.descripcion, ing.calorias, ing.imagen);
         const existe = this.receta.find(ir => ir.id === ing.id);
         if (existe) {
 
